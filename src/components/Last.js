@@ -5,35 +5,35 @@ import { FaLinkedin } from "react-icons/fa6";
 
 export const Last = () => {
   return (
-    <div className="w-full px-4 py-16	">
-      <div>
-        <div className="flex flex-col">
-          <h5>About</h5>
-          <p>
+    <div className="w-full flex flex-col px-4 py-16">
+      <div className="flex flex-col gap-y-6	">
+        <div className="flex flex-col gap-y-3	">
+          <h5 className="text-[#181A2A] text-lg font-semibold ">About</h5>
+          <p className="text-[#696A75] text-base	font-normal	">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam
           </p>
+          <div className="flex flex-col text-base	font-normal text-[#3B3C4A]">
+            <p>Email : info@jstemplate.net</p>
+            <p>Phone : 880 123 456 789</p>
+          </div>
         </div>
-        <div className="flex flex-col">
-          <p>Email : info@jstemplate.net</p>
-          <p>Phone : 880 123 456 789</p>
-        </div>
-        <div className="flex">
+        <div className="flex gap-x-4 text-[#3B3C4A] text-base font-normal">
           <p>Home</p>
           <p>Blog</p>
           <p>Contact</p>
         </div>
-        <div className="flex ">
+        <div className="flex gap-x-6 text-[#6D6E76] text-base	font-normal">
           <FaFacebook />
           <IoLogoTwitter />
           <FaInstagram />
           <FaLinkedin />
         </div>
       </div>
-      <div className="py-8 flex flex-col w-[100px] h-[60px]">
-        <img src="/1.png" />
-        <div>
+      <div className="py-8 gap-y-16	flex flex-col ">
+        <img src="/1.png" className="w-[231px] h-[54px]" />
+        <div className=" text-[#3B3C4A] text-base font-normal flex flex-col gap-y-4 ">
           <p>Terms of Use</p>
           <p>Privacy Policy</p>
           <p>Cookie Policy</p>
