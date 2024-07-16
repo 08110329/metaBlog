@@ -20,7 +20,7 @@ export const Nav = ({ articles }) => {
               readable_publish_date={item.readable_publish_date}
             />
           ))}
-      <div className="w-full flex justify-center ">
+      <div className="w-full flex justify-center  mb-3">
         <button className="border-2	border-gray-400	w-[40px] h-[40px] rounded-md flex justify-center items-center">
           <IoIosArrowBack />
         </button>

@@ -3,11 +3,11 @@
 import { Head } from "@/components/Head";
 import { Nav } from "@/components/Nav";
 import { Last } from "@/components/Last";
-import { LastPart1 } from "@/components/LastPart1";
-import { LastPart2 } from "@/components/LastPart2";
-import { LastCard1 } from "@/components/LastCard1";
+import { Grid } from "@/components/Grid";
 import { useState } from "react";
 import { useEffect } from "react";
+import { AllBlog } from "@/components/AllBlog";
+
 const getArticle = async () => {
   const res = await fetch("https://dev.to/api/articles");
 
@@ -31,9 +31,8 @@ export default function Home() {
     <div className="w-screen flex flex-col gap-y-16	">
       <Head />
       <Nav articles={articles} />
-      <LastPart1 />
-      <LastPart2 />
-      <LastCard1 />
+      <Grid articles={articles} />
+      <AllBlog articles={articles} />
       <Last />
     </div>
   );
