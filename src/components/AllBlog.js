@@ -2,7 +2,7 @@ import { BlogCard } from "./BlogCard";
 
 export const AllBlog = ({ articles }) => {
   return (
-    <div>
+    <div className="flex flex-col gap-y-8	">
       <div className="w-fit h-fit px-4 flex flex-col gap-y-8">
         <h3 className="text-[#181A2A] text-2xl font-bold	">All Blog Post</h3>
         <div className="flex items-center gap-5">

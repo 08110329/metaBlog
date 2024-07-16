@@ -28,7 +28,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="w-screen flex flex-col gap-y-16	">
+    <div className="max-w-screen-lg m-auto flex flex-col gap-y-6">
       <Head />
       <Nav articles={articles} />
       <Grid articles={articles} />

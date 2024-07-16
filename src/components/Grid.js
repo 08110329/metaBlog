@@ -2,20 +2,22 @@ import { GridCard } from "./GridCard";
 
 export const Grid = ({ articles }) => {
   return (
-    <div className="w-[1231px] flex">
-      <div className=" flex flex-col gap-[30px] px-4">
-        <p className="text-2xl font-bold	">Trending</p>
-        {articles &&
-          articles
-            .slice(0, 1)
-            .map((item) => (
-              <GridCard
-                key={item.cover_image}
-                image={item.cover_image}
-                tag={item.tags}
-                title={item.title}
-              />
-            ))}
+    <div className="flex flex-col gap-[30px] py-5 px-5 mt-[64px]">
+      <p className="text-2xl font-bold ">Trending</p>
+      <div className="max-w-screen-lg flex overflow-x-scroll ">
+        <div className="flex flex-row w-fit rounded-xl gap-x-5">
+          {articles &&
+            articles
+              .slice(0, 5)
+              .map((item) => (
+                <GridCard
+                  key={item.title}
+                  image={item.cover_image}
+                  tag={item.tags}
+                  title={item.title}
+                />
+              ))}
+        </div>
       </div>
     </div>
   );
