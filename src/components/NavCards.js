@@ -1,6 +1,6 @@
 export const NavCards = (props) => {
   return (
-    <div>
+    <div className="max-w-screen-lg relative">
       <img
         src={props.image}
         className="w-[100%] h-[600px] rounded-xl top-0 left-0 "

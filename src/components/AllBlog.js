@@ -14,7 +14,7 @@ export const AllBlog = ({ articles }) => {
           <p className="font-bold	text-xs	text-[#495057]">Branding</p>
         </div>
       </div>
-      <div>
+      <div className="flex flex-col px-4 gap-y-5">
         {articles.map((item, index) => {
           return (
             <>

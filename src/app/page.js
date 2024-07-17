@@ -7,6 +7,7 @@ import { Grid } from "@/components/Grid";
 import { useState } from "react";
 import { useEffect } from "react";
 import { AllBlog } from "@/components/AllBlog";
+import { Load } from "@/components/Load";
 
 const getArticle = async () => {
   const res = await fetch("https://dev.to/api/articles");
@@ -28,11 +29,12 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="max-w-screen-lg m-auto flex flex-col gap-y-6">
+    <div className="max-w-screen-lg m-auto flex flex-col gap-y-6 ">
       <Head />
       <Nav articles={articles} />
       <Grid articles={articles} />
       <AllBlog articles={articles} />
+      <Load />
       <Last />
     </div>
   );

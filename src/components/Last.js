@@ -5,7 +5,7 @@ import { FaLinkedin } from "react-icons/fa6";
 
 export const Last = () => {
   return (
-    <div className="w-full flex flex-col px-4 py-16">
+    <div className="w-full flex flex-col px-4 pt-20 bg-[#F6F6F7] gap-y-6	">
       <div className="flex flex-col gap-y-6	">
         <div className="flex flex-col gap-y-3	">
           <h5 className="text-[#181A2A] text-lg font-semibold ">About</h5>
@@ -31,7 +31,7 @@ export const Last = () => {
           <FaLinkedin />
         </div>
       </div>
-      <div className="py-8 gap-y-16	flex flex-col ">
+      <div className="py-8 gap-y-16	flex flex-col border border-gray-300 border-t">
         <img src="/1.png" className="w-[231px] h-[54px]" />
         <div className=" text-[#3B3C4A] text-base font-normal flex flex-col gap-y-4 ">
           <p>Terms of Use</p>
