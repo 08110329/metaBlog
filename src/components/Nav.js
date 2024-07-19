@@ -16,7 +16,7 @@ export const Nav = ({ articles }) => {
   return (
     <div className="w-screen h-fit px-5 md:relative overflow-hidden ">
       <div
-        className="w-[418%] rounded-xl flex duration-300 gap-x-8"
+        className="w-[418%] rounded-xl flex duration-300 gap-x-8 "
         style={{ transform: `translateX(-${carouselIndex * 25}%)` }}
       >
         {articles &&
@@ -32,7 +32,7 @@ export const Nav = ({ articles }) => {
               />
             ))}
       </div>
-      <div className="w-full flex justify-center  mb-3">
+      <div className="w-full flex justify-center gap-x-2 mb-3">
         <button
           className="border-2	border-gray-400	w-[40px] h-[40px] rounded-md flex justify-center items-center mt-2.5"
           onClick={handleLeftClick}
