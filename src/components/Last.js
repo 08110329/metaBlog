@@ -31,7 +31,7 @@ export const Last = () => {
           <FaLinkedin />
         </div>
       </div>
-      <div className="py-8 gap-y-16	flex flex-col border border-gray-300 border-t">
+      <div className="py-8 gap-y-16	flex flex-col border-t-2 border-gray-300 ">
         <img src="/1.png" className="w-[231px] h-[54px]" />
         <div className=" text-[#3B3C4A] text-base font-normal flex flex-col gap-y-4 ">
           <p>Terms of Use</p>

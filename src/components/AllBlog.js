@@ -1,12 +1,14 @@
 "use client";
 import { useEffect, useState } from "react";
 import { BlogCard } from "./BlogCard";
+import Link from "next/link";
 
 const categories = ["All", "llm", "Javascript", "ai", "Technology"];
 
 export const AllBlog = () => {
   const [loading, setLoading] = useState(true);
   const [articles, setArticles] = useState([]);
+  const [blog] = useState([]);
 
   const [category, setCategory] = useState("All");
   const [perPage, setPerPage] = useState(9);
@@ -48,26 +50,31 @@ export const AllBlog = () => {
     <div className="flex flex-col gap-y-8	">
       <div className="w-fit h-fit px-4 flex flex-col gap-y-8">
         <h3 className="text-[#181A2A] text-2xl font-bold	">All Blog Post</h3>
-        <div className="flex items-center gap-2.5	text-xs font-bold">
-          {categories.map((item) => (
-            <button
-              key={item}
-              className="px-1 py-1 bg-gray-200 dark:bg-slate-800 rounded-md"
-              style={{
-                color: category === item ? "#4B6BFB" : "",
-              }}
-              onClick={() => handleCategory(item)}
-            >
-              {item}
-            </button>
-          ))}
+        <div className="lg:w-[1016px] w-fit flex justify-between ">
+          <div className="flex items-center text-xs font-bold gap-2.5	">
+            {categories.map((item) => (
+              <button
+                key={item}
+                className="px-1 py-1 bg-gray-200 dark:bg-slate-800 rounded-md"
+                style={{
+                  color: category === item ? "#4B6BFB" : "",
+                }}
+                onClick={() => handleCategory(item)}
+              >
+                {item}
+              </button>
+            ))}
+          </div>
+          <Link href={`/blogs`} className="w-fit md:visible max-md:hidden ">
+            View All
+          </Link>
         </div>
       </div>
 
-      <div className="flex flex-col px-4 gap-y-5">
+      <div className="lg:grid lg:grid-cols-3 flex flex-col px-4 gap-y-5 lg:gap-x-5">
         {articles.map((item, index) => {
           return (
-            <>
+            <Link href={`/blogs/${blog.id}`}>
               <BlogCard
                 key={index}
                 cover={item.cover_image}
@@ -75,7 +82,7 @@ export const AllBlog = () => {
                 title={item.title}
                 date={item.published_at}
               />
-            </>
+            </Link>
           );
         })}
       </div>
