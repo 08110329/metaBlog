@@ -14,9 +14,9 @@ export const Nav = ({ articles }) => {
     setCarouselIndex((prevIndex) => (prevIndex === 3 ? 0 : prevIndex + 1));
   };
   return (
-    <div className="w-screen h-fit px-5 md:relative overflow-hidden ">
+    <div className="lg:w-[1016px] w-full h-fit px-5 relative overflow-hidden ">
       <div
-        className="w-[418%] rounded-xl flex duration-300 gap-x-8 "
+        className="w-[418%] rounded-xl flex duration-300 gap-x-8"
         style={{ transform: `translateX(-${carouselIndex * 25}%)` }}
       >
         {articles &&

@@ -1,12 +1,12 @@
 "use client";
 
-import { Head } from "@/components/Head";
 import { Nav } from "@/components/Nav";
 import { Last } from "@/components/Last";
 import { Grid } from "@/components/Grid";
 import { useState } from "react";
 import { useEffect } from "react";
 import { AllBlog } from "@/components/AllBlog";
+import { Header } from "@/components/Header";
 
 const getArticle = async () => {
   const res = await fetch("https://dev.to/api/articles");
@@ -29,7 +29,7 @@ export default function Home() {
 
   return (
     <div className="max-w-screen-lg m-auto flex flex-col gap-y-6 ">
-      <Head />
+      <Header />
       <Nav articles={articles} />
       <Grid articles={articles} />
       <AllBlog articles={articles} />
