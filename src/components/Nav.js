@@ -32,7 +32,7 @@ export const Nav = ({ articles }) => {
               />
             ))}
       </div>
-      <div className="w-full flex justify-center gap-x-2 mb-3">
+      <div className="w-full flex justify-center md:justify-end gap-x-2 mb-3">
         <button
           className="border-2	border-gray-400	w-[40px] h-[40px] rounded-md flex justify-center items-center mt-2.5"
           onClick={handleLeftClick}

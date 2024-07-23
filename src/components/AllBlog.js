@@ -65,7 +65,7 @@ export const AllBlog = () => {
               </button>
             ))}
           </div>
-          <Link href={`/blogs`} className="w-fit md:visible max-md:hidden ">
+          <Link href={`/blogs`} className="w-fit md:visible max-md:hidden text-xs	font-bold	">
             View All
           </Link>
         </div>

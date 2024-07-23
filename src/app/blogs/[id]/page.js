@@ -7,25 +7,25 @@ import { useParams } from "next/navigation";
 const BlogPage = () => {
   const { id } = useParams();
   return (
-    <div className="max-w-screen-lg m-auto flex flex-col gap-y-6">
+    <div className="max-w-screen-lg m-auto flex flex-col gap-24">
       <Header />
       <div className="md:w-[800px] m-auto">
         <div className="grid gap-y-8 ">
-          <div>
+          <div className="grid gap-y-5	">
             <h1 className="text-4xl	font-semibold	text-[#181A2A]">
               The Impact of Technology on the Workplace: How Technology is
               Changing
             </h1>
             <div className="flex gap-x-6">
-              <div>
-                <img src="" />
-                <p>Tracey Wilson</p>
+              <div className="flex gap-2">
+                <img src="/2.png" className="w-[28px] h-[28px]"/>
+                <p className="text-sm	font-medium	text-[#696A75] flex items-center">Tracey Wilson</p>
               </div>
-              <p>August 20, 2022</p>
+              <p className="text-sm	font-medium	text-[#696A75] flex items-center">August 20, 2022</p>
             </div>
           </div>
           <div>
-            <img />
+            <img src="/Ima.png"/>
           </div>
           <p className="font-normal	text-xl	text-[#3B3C4A]">
             Traveling is an enriching experience that opens up new horizons,
