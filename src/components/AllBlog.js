@@ -47,7 +47,7 @@ export const AllBlog = () => {
   }, [category, perPage]);
 
   return (
-    <div className="flex flex-col gap-y-8	">
+    <div className=" md:w-[1016px] md:m-auto flex flex-col gap-y-8	">
       <div className="w-fit h-fit px-4 flex flex-col gap-y-8">
         <h3 className="text-[#181A2A] text-2xl font-bold	">All Blog Post</h3>
         <div className="lg:w-[1016px] w-fit flex justify-between ">

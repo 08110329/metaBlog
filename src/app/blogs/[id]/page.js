@@ -7,9 +7,9 @@ import { useParams } from "next/navigation";
 const BlogPage = () => {
   const { id } = useParams();
   return (
-    <div className="max-w-screen-lg m-auto flex flex-col gap-24">
+    <div className="md:w-screen m-auto flex flex-col md:gap-24 max-md:gap-y-6	">
       <Header />
-      <div className="md:w-[800px] m-auto">
+      <div className="md:w-[800px] m-auto px-4">
         <div className="grid gap-y-8 ">
           <div className="grid gap-y-5	">
             <h1 className="text-4xl	font-semibold	text-[#181A2A]">
@@ -75,7 +75,7 @@ const BlogPage = () => {
         </div>
       </div>
 
-      <Last />
+      <Last/>
     </div>
   );
 };

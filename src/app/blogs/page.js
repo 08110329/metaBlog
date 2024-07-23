@@ -47,9 +47,10 @@ const BlogPage = () => {
     getData();
   }, []);
   return (
-    <div className="max-w-screen-lg m-auto flex flex-col gap-y-6">
+    <div className="md:w-screen">
+      <div className="flex flex-col gap-y-6">
       <Header />
-      <div className="h-fit grid gap-12">
+      <div className="md:w-[1016px] m-auto h-fit grid gap-12">
         <p className="px-4 text-2xl font-bold text-[#181A2A]">All Blog Post</p>
         <div className="lg:grid lg:grid-cols-3 flex flex-col px-4 gap-y-5 lg:gap-x-5">
           {blogs.map((blog) => (
@@ -72,6 +73,8 @@ const BlogPage = () => {
       </div>
       <Last />
     </div>
+    </div>
+    
   );
 };
 
