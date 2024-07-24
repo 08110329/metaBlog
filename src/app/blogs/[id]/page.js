@@ -18,17 +18,21 @@ const BlogPage = () => {
             </h1>
             <div className="flex gap-x-6">
               <div className="flex gap-2">
-                <img src="/2.png" className="w-[28px] h-[28px]"/>
-                <p className="text-sm	font-medium	text-[#696A75] flex items-center">Tracey Wilson</p>
+                <img src="/2.png" className="w-[28px] h-[28px]" />
+                <p className="text-sm	font-medium	text-[#696A75] flex items-center">
+                  Tracey Wilson
+                </p>
               </div>
-              <p className="text-sm	font-medium	text-[#696A75] flex items-center">August 20, 2022</p>
+              <p className="text-sm	font-medium	text-[#696A75] flex items-center">
+                August 20, 2022
+              </p>
             </div>
           </div>
           <div>
-            <img src="/Ima.png"/>
+            <img src="/Ima.png" />
           </div>
           <p className="font-normal	text-xl	text-[#3B3C4A]">
-            Traveling is an enriching experience that opens up new horizons,
+            {`Traveling is an enriching experience that opens up new horizons,
             exposes us to different cultures, and creates memories that last a
             lifetime. However, traveling can also be stressful and overwhelming,
             especially if you don't plan and prepare adequately. In this blog
@@ -38,12 +42,12 @@ const BlogPage = () => {
             customs. This includes trying local cuisine, attending cultural
             events and festivals, and interacting with locals. Learning a few
             phrases in the local language can also go a long way in making
-            connections and showing respect.
+            connections and showing respect.`}
           </p>
           <div className="grid gap-y-4">
             <h1 className="text-2xl	font-semibold	">Research Your Destination</h1>
             <p className="font-normal	text-xl	text-[#3B3C4A]">
-              Before embarking on your journey, take the time to research your
+              {` Before embarking on your journey, take the time to research your
               destination. This includes understanding the local culture,
               customs, and laws, as well as identifying top attractions,
               restaurants, and accommodations. Doing so will help you navigate
@@ -53,13 +57,13 @@ const BlogPage = () => {
               hendrerit gravida rutrum quisque non tellus orci ac auctor. Mi
               ipsum faucibus vitae aliquet nec ullamcorper sit amet. Aenean
               euismod elementum nisi quis eleifend quam adipiscing vitae.
-              Viverra adipiscing at in tellus.
+              Viverra adipiscing at in tellus.`}
             </p>
           </div>
           <div className="grid gap-y-4">
             <h1 className="text-2xl	font-semibold	">Research Your Destination</h1>
             <p className="font-normal	text-xl	text-[#3B3C4A]">
-              Before embarking on your journey, take the time to research your
+              {`Before embarking on your journey, take the time to research your
               destination. This includes understanding the local culture,
               customs, and laws, as well as identifying top attractions,
               restaurants, and accommodations. Doing so will help you navigate
@@ -69,13 +73,13 @@ const BlogPage = () => {
               hendrerit gravida rutrum quisque non tellus orci ac auctor. Mi
               ipsum faucibus vitae aliquet nec ullamcorper sit amet. Aenean
               euismod elementum nisi quis eleifend quam adipiscing vitae.
-              Viverra adipiscing at in tellus.
+              Viverra adipiscing at in tellus.`}
             </p>
           </div>
         </div>
       </div>
 
-      <Last/>
+      <Last />
     </div>
   );
 };

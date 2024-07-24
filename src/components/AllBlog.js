@@ -65,7 +65,10 @@ export const AllBlog = () => {
               </button>
             ))}
           </div>
-          <Link href={`/blogs`} className="w-fit md:visible max-md:hidden text-xs	font-bold	">
+          <Link
+            href={`/blogs`}
+            className="w-fit md:visible max-md:hidden text-xs	font-bold	"
+          >
             View All
           </Link>
         </div>
@@ -74,9 +77,9 @@ export const AllBlog = () => {
       <div className="lg:grid lg:grid-cols-3 flex flex-col px-4 gap-y-5 lg:gap-x-5">
         {articles.map((item, index) => {
           return (
-            <Link href={`/blogs/${blog.id}`}>
+            <Link key={item} href={`/blogs/${blog.id}`}>
               <BlogCard
-                key={index}
+                key={item.index}
                 cover={item.cover_image}
                 tags={item.tag_list}
                 title={item.title}
