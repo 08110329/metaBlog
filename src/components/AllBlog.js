@@ -4,6 +4,7 @@ import { BlogCard } from "./BlogCard";
 import Link from "next/link";
 
 const categories = ["All", "llm", "Javascript", "ai", "Technology"];
+const view = "view"
 
 export const AllBlog = () => {
   const [loading, setLoading] = useState(true);
@@ -50,12 +51,12 @@ export const AllBlog = () => {
     <div className=" md:w-[1016px] md:m-auto flex flex-col gap-y-8	">
       <div className="w-fit h-fit px-4 flex flex-col gap-y-8">
         <h3 className="text-[#181A2A] text-2xl font-bold	">All Blog Post</h3>
-        <div className="lg:w-[1016px] w-fit flex justify-between ">
-          <div className="flex items-center text-xs font-bold gap-2.5	">
+        <div className="lg:w-[1016px] w-fit flex  ">
+          <div className="flex items-center text-xs font-bold gap-5	">
             {categories.map((item) => (
               <button
                 key={item}
-                className="px-1 py-1 bg-gray-200 dark:bg-slate-800 rounded-md"
+                className="px-1 py-1 rounded-md"
                 style={{
                   color: category === item ? "#4B6BFB" : "",
                 }}
@@ -67,7 +68,9 @@ export const AllBlog = () => {
           </div>
           <Link
             href={`/blogs`}
-            className="w-fit md:visible max-md:hidden text-xs	font-bold	"
+            className="md:w-[690px] flex items-center justify-end md:visible max-md:hidden text-xs	font-bold	"
+            style={{color:view === "" ? "#4B6BFB" : "",}}
+            onClick={() => handleCategory("view")}
           >
             View All
           </Link>

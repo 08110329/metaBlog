@@ -1,11 +1,11 @@
 export const NavCards = (props) => {
   return (
-    <div className="max-w-screen-lg relative">
+    <div className="max-w-screen-lg max-md:full relative">
       <img
         src={props.image}
-        className="w-[100%] h-[600px] rounded-xl top-0 left-0 "
+        className="w-[95%]  h-[600px] rounded-xl top-0 left-0 "
       />
-      <div className="w-[90%] rounded-xl  bg-[#FFFFFF] absolute bottom-2 left-4 gap-y-6  flex flex-col	px-10 py-10 ">
+      <div className="md:w-[70%] rounded-xl  bg-[#FFFFFF] absolute bottom-2 left-4 gap-y-6  flex flex-col	px-10 py-10 ">
         <div className=" flex flex-col gap-y-4">
           <button className="bg-[#4B6BFB] text-[#FFFFFF] w-fit h-fit rounded-md	text-sm	">
             {props.tag

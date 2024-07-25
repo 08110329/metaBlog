@@ -2,7 +2,7 @@ import { GridCard } from "./GridCard";
 
 export const Grid = ({ articles }) => {
   return (
-    <div className="lg:w-[1016px] md:m-auto flex flex-col gap-[30px] py-5 px-5">
+    <div className="md:w-[1016px] md:m-auto flex flex-col gap-5 py-5 px-5">
       <p className="text-2xl font-bold ">Trending</p>
       <div className="max-w-screen-lg flex overflow-x-scroll ">
         <div className="flex flex-row w-fit rounded-xl gap-x-5">

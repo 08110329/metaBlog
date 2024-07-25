@@ -2,6 +2,7 @@ import { FaFacebook } from "react-icons/fa";
 import { IoLogoTwitter } from "react-icons/io";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
+import Link from "next/link";
 
 export const Last = () => {
   return (
@@ -21,9 +22,9 @@ export const Last = () => {
             </div>
           </div>
           <div className="md:w-[521px] md:justify-center md:grid md:h-[88px] flex gap-x-4 text-[#3B3C4A] text-base font-normal">
-            <p>Home</p>
-            <p>Blog</p>
-            <p>Contact</p>
+            <Link href={`/`}>Home</Link>
+            <Link href={`/blogs`}>Blog</Link>
+            <Link href={`/contact`}>Contact</Link>
           </div>
           <div className="flex gap-x-6 text-[#6D6E76] text-base	font-normal">
             <FaFacebook />
